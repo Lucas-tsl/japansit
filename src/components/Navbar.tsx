@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import SearchComponentSimple from './SearchComponentSimple';
 import ThemeToggle from './ThemeToggle';
+import UserMenu from './UserMenu';
 import MegaMenu from './MegaMenu';
 import MobileMenu from './MobileMenu';
 
@@ -29,18 +30,13 @@ export default function Navbar() {
                 <SearchComponentSimple />
               </div>
               <ThemeToggle />
-              <a
-                href="/login"
-                className="text-gray-700 dark:text-gray-300 hover:text-japan-red transition-colors font-medium hover-lift smooth-transition"
-              >
-                Connexion
-              </a>
-              <a
-                href="/signup"
-                className="bg-japan-red text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors font-medium hover-lift micro-bounce"
-              >
-                Inscription
-              </a>
+              <Link href="/blog" className="text-gray-700 dark:text-gray-300 hover:text-japan-red hover:scale-110 smooth-transition">
+                Blog
+              </Link>
+              <Link href="/recherche" className="text-gray-700 dark:text-gray-300 hover:text-japan-red hover:scale-110 smooth-transition">
+                Recherche
+              </Link>
+              <UserMenu />
             </div>
 
             {/* Mobile menu button */}
