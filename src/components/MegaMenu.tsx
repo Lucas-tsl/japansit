@@ -63,7 +63,7 @@ const MegaMenu = () => {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="group/item mega-menu-item flex items-start p-3 rounded-lg hover:bg-gray-50 transition-all duration-200"
+                      className="group/item mega-menu-item flex items-start p-3 rounded-lg hover:bg-sakura-pink/10 transition-all duration-200"
                     >
                       <span className="text-2xl mr-3 group-hover/item:scale-110 transition-transform">
                         {item.icon}

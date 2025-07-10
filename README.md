@@ -2,6 +2,14 @@
 
 Un blog complet et moderne sur le Japon construit avec Next.js et Tailwind CSS.
 
+## 🌐 Site en Ligne
+
+**[🚀 Voir le site JapanSit →](https://japansit-1z20iwwx1-lucas-tsls-projects.vercel.app)**
+
+## 🌸 Aperçut 🇯🇵
+
+Un blog complet et moderne sur le Japon construit avec Next.js et Tailwind CSS.
+
 ## � Site en Ligne
 
 **[🚀 Voir le site JapanSit →](https://japansit-1z20iwwx1-lucas-tsls-projects.vercel.app)**

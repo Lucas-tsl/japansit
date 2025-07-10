@@ -21,7 +21,7 @@ const MobileMenu = () => {
           <a
             key={item.name}
             href={item.href}
-            className="flex items-center px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-japan-red transition-colors"
+            className="flex items-center px-3 py-2 rounded-lg text-gray-700 hover:bg-sakura-pink/10 hover:text-japan-red transition-colors"
           >
             <span className="text-lg mr-2">{item.icon}</span>
             <span className="text-sm font-medium">{item.name}</span>
