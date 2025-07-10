@@ -15,7 +15,7 @@ export default function AnimesPage() {
             Animés & Manga
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explorez l'univers fascinant de l'animation et de la bande dessinée japonaise
+            Explorez l&apos;univers fascinant de l&apos;animation et de la bande dessinée japonaise
           </p>
         </div>
 
@@ -30,7 +30,7 @@ export default function AnimesPage() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-japan-red mb-4">Studio Ghibli</h3>
                 <p className="text-gray-600 mb-4">
-                  Les chefs-d'œuvre de Miyazaki et Takahata qui ont enchanté le monde entier.
+                  Les chefs-d&apos;œuvre de Miyazaki et Takahata qui ont enchanté le monde entier.
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-gray-500">
@@ -108,7 +108,7 @@ export default function AnimesPage() {
             <div className="bg-white rounded-xl shadow-lg p-8">
               <h3 className="text-2xl font-bold text-japan-red mb-6">Shonen</h3>
               <p className="text-gray-600 mb-4">
-                Destiné aux jeunes hommes, avec des thèmes d'aventure et de combat.
+                Destiné aux jeunes hommes, avec des thèmes d&apos;aventure et de combat.
               </p>
               <div className="space-y-3">
                 <div className="flex items-center">
@@ -122,7 +122,7 @@ export default function AnimesPage() {
                   <span className="text-2xl mr-3">🏴‍☠️</span>
                   <div>
                     <strong>One Piece</strong>
-                    <p className="text-gray-500 text-sm">L'aventure pirate ultime</p>
+                    <p className="text-gray-500 text-sm">L&apos;aventure pirate ultime</p>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -145,7 +145,7 @@ export default function AnimesPage() {
                   <span className="text-2xl mr-3">🌙</span>
                   <div>
                     <strong>Sailor Moon</strong>
-                    <p className="text-gray-500 text-sm">L'icône des magical girls</p>
+                    <p className="text-gray-500 text-sm">L&apos;icône des magical girls</p>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -170,7 +170,7 @@ export default function AnimesPage() {
         {/* Manga Industry */}
         <section className="mb-20">
           <h2 className="text-3xl font-bold text-japan-red mb-12 font-japanese text-center">
-            L'Industrie du Manga
+            L&apos;Industrie du Manga
           </h2>
           <div className="bg-white rounded-xl shadow-lg p-8">
             <div className="grid md:grid-cols-3 gap-8">
@@ -180,7 +180,7 @@ export default function AnimesPage() {
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold text-temple-gold mb-2">40%</div>
-                <p className="text-gray-600">Part du marché mondial de l'édition</p>
+                <p className="text-gray-600">Part du marché mondial de l&apos;édition</p>
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold text-indigo-blue mb-2">3000+</div>
@@ -217,7 +217,7 @@ export default function AnimesPage() {
                   <span className="text-sakura-pink mr-3">🏪</span>
                   <div>
                     <strong>Den Den Town (Osaka)</strong>
-                    <p className="text-gray-600 text-sm">L'Akihabara du Kansai</p>
+                    <p className="text-gray-600 text-sm">L&apos;Akihabara du Kansai</p>
                   </div>
                 </li>
               </ul>
@@ -237,7 +237,7 @@ export default function AnimesPage() {
                   <span className="text-temple-gold mr-3">🎨</span>
                   <div>
                     <strong>AnimeJapan</strong>
-                    <p className="text-gray-600 text-sm">Salon officiel de l'industrie</p>
+                    <p className="text-gray-600 text-sm">Salon officiel de l&apos;industrie</p>
                   </div>
                 </li>
                 <li className="flex items-start">

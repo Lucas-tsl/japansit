@@ -69,7 +69,7 @@ export default function LatestPosts() {
                 </p>
                 
                 <div className="inline-flex items-center text-red-600 font-semibold hover:text-red-700 transition-colors">
-                  Lire l'article
+                  Lire l&apos;article
                   <span className="ml-2">→</span>
                 </div>
               </div>

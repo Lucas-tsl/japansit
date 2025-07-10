@@ -30,7 +30,7 @@ export default function LieuxPage() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-japan-red mb-4">Tokyo</h3>
                 <p className="text-gray-600 mb-4">
-                  La capitale ultra-moderne, mélange fascinant de tradition et d'innovation.
+                  La capitale ultra-moderne, mélange fascinant de tradition et d&apos;innovation.
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-gray-500">
@@ -54,7 +54,7 @@ export default function LieuxPage() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-japan-red mb-4">Kyoto</h3>
                 <p className="text-gray-600 mb-4">
-                  L'ancienne capitale impériale, gardienne des traditions japonaises.
+                  L&apos;ancienne capitale impériale, gardienne des traditions japonaises.
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-gray-500">
@@ -63,7 +63,7 @@ export default function LieuxPage() {
                   </div>
                   <div className="flex items-center text-sm text-gray-500">
                     <span className="w-2 h-2 bg-temple-gold rounded-full mr-3"></span>
-                    Kinkaku-ji (Pavillon d'Or)
+                    Kinkaku-ji (Pavillon d&apos;Or)
                   </div>
                   <div className="flex items-center text-sm text-gray-500">
                     <span className="w-2 h-2 bg-temple-gold rounded-full mr-3"></span>
@@ -78,12 +78,12 @@ export default function LieuxPage() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-japan-red mb-4">Osaka</h3>
                 <p className="text-gray-600 mb-4">
-                  La cuisine de rue, les châteaux et l'hospitalité du Kansai.
+                  La cuisine de rue, les châteaux et l&apos;hospitalité du Kansai.
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-gray-500">
                     <span className="w-2 h-2 bg-indigo-blue rounded-full mr-3"></span>
-                    Château d'Osaka
+                    Château d&apos;Osaka
                   </div>
                   <div className="flex items-center text-sm text-gray-500">
                     <span className="w-2 h-2 bg-indigo-blue rounded-full mr-3"></span>
@@ -126,7 +126,7 @@ export default function LieuxPage() {
                   <span className="text-temple-gold mr-3">🏛️</span>
                   <div>
                     <strong>Zenko-ji (Nagano)</strong>
-                    <p className="text-gray-600 text-sm">L'un des temples les plus anciens du Japon</p>
+                    <p className="text-gray-600 text-sm">L&apos;un des temples les plus anciens du Japon</p>
                   </div>
                 </li>
               </ul>
@@ -213,7 +213,7 @@ export default function LieuxPage() {
                     <span className="text-sakura-pink mr-3">🏝️</span>
                     <div>
                       <strong>Naoshima</strong>
-                      <p className="text-gray-600 text-sm">L'île de l'art contemporain</p>
+                      <p className="text-gray-600 text-sm">L&apos;île de l&apos;art contemporain</p>
                     </div>
                   </li>
                   <li className="flex items-start">

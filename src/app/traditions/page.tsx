@@ -15,7 +15,7 @@ export default function TraditionsPage() {
             Traditions Japonaises
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Plongez dans l'héritage culturel millénaire du Japon et ses traditions vivantes
+            Plongez dans l&apos;héritage culturel millénaire du Japon et ses traditions vivantes
           </p>
         </div>
 
@@ -31,7 +31,7 @@ export default function TraditionsPage() {
                 <h3 className="text-2xl font-bold text-japan-red mb-4">茶道 - Sado (Cérémonie du thé)</h3>
                 <p className="text-gray-600 mb-4">
                   Art de préparer et de servir le thé matcha selon des règles précises, 
-                  incarnant l'harmonie, le respect, la pureté et la tranquillité.
+                  incarnant l&apos;harmonie, le respect, la pureté et la tranquillité.
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-gray-500">
@@ -55,7 +55,7 @@ export default function TraditionsPage() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-japan-red mb-4">華道 - Kado (Art floral)</h3>
                 <p className="text-gray-600 mb-4">
-                  L'art d'arranger les fleurs selon des principes esthétiques et spirituels, 
+                  L&apos;art d&apos;arranger les fleurs selon des principes esthétiques et spirituels, 
                   reflétant la beauté éphémère de la nature.
                 </p>
                 <div className="space-y-2">
@@ -95,7 +95,7 @@ export default function TraditionsPage() {
               <div className="h-32 bg-gradient-to-br from-indigo-blue to-sakura-pink rounded-lg mb-4"></div>
               <h3 className="text-xl font-bold text-japan-red mb-2">柔道 - Judo</h3>
               <p className="text-gray-600 text-sm">
-                "La voie de la souplesse", art martial créé par Jigoro Kano, sport olympique.
+                &quot;La voie de la souplesse&quot;, art martial créé par Jigoro Kano, sport olympique.
               </p>
             </div>
 
@@ -151,7 +151,7 @@ export default function TraditionsPage() {
                       <span className="text-2xl mr-3">🎌</span>
                       <div>
                         <strong>Nouvel An (Shogatsu)</strong>
-                        <p className="text-gray-600 text-sm">Fête la plus importante de l'année</p>
+                        <p className="text-gray-600 text-sm">Fête la plus importante de l&apos;année</p>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -300,10 +300,10 @@ export default function TraditionsPage() {
           <div className="bg-gradient-to-r from-temple-gold to-japan-red rounded-xl p-8 text-white">
             <h2 className="text-3xl font-bold mb-4">Explorez Plus Profondément</h2>
             <p className="text-lg mb-6">
-              Découvrez l'histoire qui a façonné ces traditions millénaires
+              Découvrez l&apos;histoire qui a façonné ces traditions millénaires
             </p>
             <button className="bg-white text-temple-gold font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-colors">
-              Découvrir l'Histoire
+              Découvrir l&apos;Histoire
             </button>
           </div>
         </section>

@@ -28,11 +28,11 @@ export default function ModePage() {
                 <div className="border-l-4 border-red-500 pl-4">
                   <h4 className="font-semibold text-gray-900">Kimono</h4>
                   <p className="text-gray-700 text-sm">Vêtement traditionnel japonais</p>
-                  <p className="text-gray-700">Porté lors d'occasions spéciales, cérémonies</p>
+                  <p className="text-gray-700">Porté lors d&apos;occasions spéciales, cérémonies</p>
                 </div>
                 <div className="border-l-4 border-pink-500 pl-4">
                   <h4 className="font-semibold text-gray-900">Yukata</h4>
-                  <p className="text-gray-700 text-sm">Kimono d'été en coton</p>
+                  <p className="text-gray-700 text-sm">Kimono d&apos;été en coton</p>
                   <p className="text-gray-700">Festivals, onsen, occasions décontractées</p>
                 </div>
                 <div className="border-l-4 border-purple-500 pl-4">
@@ -83,7 +83,7 @@ export default function ModePage() {
                 </div>
                 <div className="border-l-4 border-blue-400 pl-4">
                   <h4 className="font-semibent text-gray-900">Decora</h4>
-                  <p className="text-gray-700 text-sm">Surchargé d'accessoires</p>
+                  <p className="text-gray-700 text-sm">Surchargé d&apos;accessoires</p>
                   <p className="text-gray-700">Barrettes, peluches, couleurs vives</p>
                 </div>
               </div>
@@ -189,7 +189,7 @@ export default function ModePage() {
                 <ul className="space-y-1 text-gray-700 text-sm">
                   <li>• Lumine (mode féminine)</li>
                   <li>• Takashimaya Times Square</li>
-                  <li>• Don Quijote (tout et n'importe quoi)</li>
+                  <li>• Don Quijote (tout et n&apos;importe quoi)</li>
                 </ul>
               </div>
             </div>
@@ -204,7 +204,7 @@ export default function ModePage() {
               <li>• <strong>Qualité over quantité :</strong> Privilégiez des pièces bien faites</li>
               <li>• <strong>Mixez les styles :</strong> Combinez traditionnel et moderne</li>
               <li>• <strong>Accessoirisez :</strong> Les détails font la différence</li>
-              <li>• <strong>Assumez votre style :</strong> La mode japonaise célèbre l'individualité</li>
+              <li>• <strong>Assumez votre style :</strong> La mode japonaise célèbre l&apos;individualité</li>
               <li>• <strong>Respectez les codes :</strong> Apprenez les règles avant de les enfreindre</li>
             </ul>
           </div>

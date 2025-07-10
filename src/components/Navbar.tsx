@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import SearchComponent from './SearchComponent';
 import MegaMenu from './MegaMenu';
 import MobileMenu from './MobileMenu';
@@ -10,10 +11,10 @@ export default function Navbar() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center">
-              <a href="/" className="flex items-center space-x-2">
+              <Link href="/" className="flex items-center space-x-2">
                 <span className="text-2xl">🇯🇵</span>
                 <span className="text-xl font-bold text-gradient-japan font-japanese">JapanSit</span>
-              </a>
+              </Link>
             </div>
 
             {/* Desktop Navigation */}

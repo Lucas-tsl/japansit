@@ -31,7 +31,7 @@ export default function PreparerPage() {
                 </div>
                 <div className="border-l-4 border-green-500 pl-4">
                   <h4 className="font-semibold text-gray-900">Visa Étudiant</h4>
-                  <p className="text-gray-700">Certificat d'éligibilité (COE) requis, 3000¥</p>
+                  <p className="text-gray-700">Certificat d&apos;éligibilité (COE) requis, 3000¥</p>
                 </div>
                 <div className="border-l-4 border-purple-500 pl-4">
                   <h4 className="font-semibold text-gray-900">Visa Working Holiday</h4>
@@ -39,7 +39,7 @@ export default function PreparerPage() {
                 </div>
                 <div className="border-l-4 border-orange-500 pl-4">
                   <h4 className="font-semibold text-gray-900">Visa Travail</h4>
-                  <p className="text-gray-700">Offre d'emploi requise, COE, 3000¥</p>
+                  <p className="text-gray-700">Offre d&apos;emploi requise, COE, 3000¥</p>
                 </div>
               </div>
             </div>
@@ -64,7 +64,7 @@ export default function PreparerPage() {
                     <li>• Appartement (60000-150000¥/mois)</li>
                     <li>• Share house (40000-80000¥/mois)</li>
                     <li>• Résidence étudiante (30000-60000¥/mois)</li>
-                    <li>• Famille d'accueil (60000-100000¥/mois)</li>
+                    <li>• Famille d&apos;accueil (60000-100000¥/mois)</li>
                   </ul>
                 </div>
               </div>
@@ -192,7 +192,7 @@ export default function PreparerPage() {
                 <li>☐ Adaptateur prise électrique</li>
                 <li>☐ Apps téléchargées</li>
                 <li>☐ Cash en yens</li>
-                <li>☐ Numéros d'urgence</li>
+                <li>☐ Numéros d&apos;urgence</li>
                 <li>☐ Copies documents importants</li>
                 <li>☐ Médicaments personnels</li>
               </ul>

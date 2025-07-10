@@ -14,8 +14,8 @@ export default function TravaillerPage() {
               Guide complet pour travailler au Japon
             </h2>
             <p className="text-gray-700 mb-4">
-              Découvrez tout ce qu'il faut savoir pour décrocher un emploi au Japon, 
-              de la recherche d'emploi aux visas de travail.
+              Découvrez tout ce qu&apos;il faut savoir pour décrocher un emploi au Japon, 
+              de la recherche d&apos;emploi aux visas de travail.
             </p>
           </div>
 
@@ -27,9 +27,9 @@ export default function TravaillerPage() {
               <ul className="space-y-2 text-gray-700">
                 <li>• Visa de travail qualifié (技術・人文知識・国際業務)</li>
                 <li>• Visa Working Holiday</li>
-                <li>• Visa d'investisseur/gérant d'entreprise</li>
+                <li>• Visa d&apos;investisseur/gérant d&apos;entreprise</li>
                 <li>• Visa de professeur</li>
-                <li>• Visa d'ingénieur</li>
+                <li>• Visa d&apos;ingénieur</li>
               </ul>
             </div>
 
@@ -48,7 +48,7 @@ export default function TravaillerPage() {
 
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                Sites de recherche d'emploi
+                Sites de recherche d&apos;emploi
               </h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• GaijinPot Jobs</li>
@@ -79,14 +79,14 @@ export default function TravaillerPage() {
             <div className="prose text-gray-700">
               <p className="mb-4">
                 <strong>1. Maîtrisez le japonais :</strong> Un niveau JLPT N2 minimum est souvent requis 
-                pour les postes autres que l'enseignement de l'anglais.
+                pour les postes autres que l&apos;enseignement de l&apos;anglais.
               </p>
               <p className="mb-4">
                 <strong>2. Adaptez votre CV :</strong> Utilisez le format japonais (rirekisho) et 
                 incluez une photo professionnelle.
               </p>
               <p className="mb-4">
-                <strong>3. Comprenez la culture d'entreprise :</strong> Hiérarchie, respect des horaires, 
+                <strong>3. Comprenez la culture d&apos;entreprise :</strong> Hiérarchie, respect des horaires, 
                 travail en équipe (teamwork).
               </p>
               <p className="mb-4">

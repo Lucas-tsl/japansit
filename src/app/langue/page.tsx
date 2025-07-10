@@ -84,7 +84,7 @@ export default function LanguePage() {
                 <div className="flex items-center space-x-2">
                   <span className="text-2xl">🌐</span>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Tae Kim's Grammar</h4>
+                    <h4 className="font-semibold text-gray-900">Tae Kim&apos;s Grammar</h4>
                     <p className="text-gray-700 text-sm">Guide complet de grammaire japonaise</p>
                   </div>
                 </div>
@@ -143,7 +143,7 @@ export default function LanguePage() {
 
           <div className="bg-white rounded-lg shadow-md p-6 mt-8">
             <h3 className="text-xl font-semibold text-gray-900 mb-4">
-              🗾 Méthode d'apprentissage recommandée
+              🗾 Méthode d&apos;apprentissage recommandée
             </h3>
             <div className="space-y-4">
               <div className="border-l-4 border-red-500 pl-4">
@@ -176,7 +176,7 @@ export default function LanguePage() {
             <ul className="space-y-2 text-gray-700">
               <li>• <strong>Régularité :</strong> 15-30 minutes par jour valent mieux que 3h une fois par semaine</li>
               <li>• <strong>Diversité :</strong> Combinez apps, cours, médias japonais et conversation</li>
-              <li>• <strong>Patience :</strong> Le japonais demande 2200h d'étude pour les francophones</li>
+              <li>• <strong>Patience :</strong> Le japonais demande 2200h d&apos;étude pour les francophones</li>
               <li>• <strong>Pratique :</strong> Écrivez un journal, parlez tout seul, trouvez un tandem</li>
               <li>• <strong>Culture :</strong> Comprenez le contexte culturel derrière la langue</li>
             </ul>
@@ -184,7 +184,7 @@ export default function LanguePage() {
 
           <div className="mt-8 text-center">
             <Link href="/forum" className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700">
-              Rejoindre la communauté d'apprentissage
+              Rejoindre la communauté d&apos;apprentissage
             </Link>
           </div>
         </div>

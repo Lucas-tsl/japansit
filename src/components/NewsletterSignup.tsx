@@ -23,7 +23,7 @@ export default function NewsletterSignup() {
                   type="submit"
                   className="px-8 py-4 bg-white text-red-600 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
-                  S'abonner
+                  S&apos;abonner
                 </button>
               </div>
             </form>

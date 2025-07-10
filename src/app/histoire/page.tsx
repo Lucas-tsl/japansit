@@ -15,7 +15,7 @@ export default function HistoirePage() {
             Histoire du Japon
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Découvrez l'histoire fascinante du Japon, des origines aux temps modernes
+            Découvrez l&apos;histoire fascinante du Japon, des origines aux temps modernes
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export default function HistoirePage() {
                 <div className="md:col-span-3">
                   <h3 className="text-xl font-bold text-japan-red mb-3">平安時代 - Heian</h3>
                   <p className="text-gray-600 mb-4">
-                    Âge d'or de la culture aristocratique japonaise, naissance de la littérature classique 
+                    Âge d&apos;or de la culture aristocratique japonaise, naissance de la littérature classique 
                     et raffinement des arts.
                   </p>
                   <div className="grid md:grid-cols-2 gap-4">
@@ -143,7 +143,7 @@ export default function HistoirePage() {
                 <div className="md:col-span-3">
                   <h3 className="text-xl font-bold text-japan-red mb-3">明治時代 - Meiji</h3>
                   <p className="text-gray-600 mb-4">
-                    Restauration impériale, modernisation rapide, ouverture à l'Occident 
+                    Restauration impériale, modernisation rapide, ouverture à l&apos;Occident 
                     et transformation en puissance mondiale.
                   </p>
                   <div className="grid md:grid-cols-2 gap-4">
@@ -173,7 +173,7 @@ export default function HistoirePage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-japan-red mb-2">Oda Nobunaga</h3>
                 <p className="text-gray-600 text-sm mb-4">
-                  Daimyo révolutionnaire qui débuta l'unification du Japon au 16ème siècle.
+                  Daimyo révolutionnaire qui débuta l&apos;unification du Japon au 16ème siècle.
                 </p>
                 <div className="text-sm text-gray-500">
                   <span className="font-semibold">Période:</span> 1534-1582
@@ -199,7 +199,7 @@ export default function HistoirePage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-japan-red mb-2">Empereur Meiji</h3>
                 <p className="text-gray-600 text-sm mb-4">
-                  Empereur qui présida à la modernisation et à l'ouverture du Japon.
+                  Empereur qui présida à la modernisation et à l&apos;ouverture du Japon.
                 </p>
                 <div className="text-sm text-gray-500">
                   <span className="font-semibold">Période:</span> 1852-1912
@@ -290,7 +290,7 @@ export default function HistoirePage() {
                 <div className="text-4xl mb-4">🗾</div>
                 <h3 className="text-xl font-bold text-japan-red mb-2">Reconstruction</h3>
                 <p className="text-gray-600 text-sm">
-                  Miracle économique d'après-guerre (1945-1990)
+                  Miracle économique d&apos;après-guerre (1945-1990)
                 </p>
               </div>
 
@@ -314,8 +314,8 @@ export default function HistoirePage() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="h-32 bg-gradient-to-br from-japan-red to-sunset-orange"></div>
               <div className="p-4">
-                <h3 className="font-bold text-japan-red mb-2">Château d'Himeji</h3>
-                <p className="text-gray-600 text-sm">Chef-d'œuvre d'architecture militaire</p>
+                <h3 className="font-bold text-japan-red mb-2">Château d&apos;Himeji</h3>
+                <p className="text-gray-600 text-sm">Chef-d&apos;œuvre d&apos;architecture militaire</p>
               </div>
             </div>
 
@@ -350,7 +350,7 @@ export default function HistoirePage() {
           <div className="bg-gradient-to-r from-japan-red to-temple-gold rounded-xl p-8 text-white">
             <h2 className="text-3xl font-bold mb-4">Découvrez les Traditions Vivantes</h2>
             <p className="text-lg mb-6">
-              Explorez comment l'histoire a façonné les traditions japonaises d'aujourd'hui
+              Explorez comment l&apos;histoire a façonné les traditions japonaises d&apos;aujourd&apos;hui
             </p>
             <button className="bg-white text-japan-red font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-colors">
               Explorer les Traditions

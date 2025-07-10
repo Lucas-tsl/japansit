@@ -11,7 +11,6 @@ JapanSit est une plateforme complète dédiée à la culture japonaise, offrant 
 - **Navigation intuitive** avec méga-menu organisé par thématiques
 - **12 sections thématiques** complètes (Étudier, Travailler, Voyager, etc.)
 - **Design responsive** optimisé pour tous les appareils
-- **Moteur de recherche** interne avec autocomplétion
 - **Forum communautaire** pour échanger avec d'autres passionnés
 - **Interface moderne** avec animations et effets visuels japonais
 
@@ -46,7 +45,7 @@ JapanSit est une plateforme complète dédiée à la culture japonaise, offrant 
 
 ```bash
 # Cloner le repository
-git clone https://github.com/votre-username/japansit.git
+git clone https://github.com/Lucas-tsl/japansit.git
 
 # Installer les dépendances
 cd japansit
@@ -78,44 +77,93 @@ Le site est entièrement responsive avec :
 - **Noto Sans JP** - Police japonaise principale
 - **Inter** - Police moderne pour le contenu
 
-## 🌐 Déploiement
+## 🚀 Déploiement
 
-Le site est déployé sur Vercel avec déploiement automatique depuis GitHub.
+### Vercel (Recommandé)
 
-### Variables d'environnement
-Aucune variable d'environnement requise pour la version de base.
+1. **Via GitHub** (automatique)
+   - Connectez votre compte GitHub à Vercel
+   - Importez le repository `japansit`
+   - Vercel détectera automatiquement Next.js
+   - Le déploiement se fera automatiquement
 
-## 📄 Structure du Projet
+2. **Via CLI Vercel**
+```bash
+# Installer Vercel CLI
+npm i -g vercel
+
+# Déployer
+vercel
+
+# Pour les déploiements futurs
+vercel --prod
+```
+
+### Variables d'Environnement
+
+Aucune variable d'environnement requise pour le déploiement de base.
+
+### Scripts de Production
+
+```bash
+npm run build    # Build optimisé
+npm run start    # Serveur de production local
+npm run lint     # Vérification du code
+```
+
+## 📂 Structure du Projet
 
 ```
 src/
-├── app/                 # Pages Next.js (App Router)
-├── components/          # Composants réutilisables
-├── context/            # Contextes React
-└── styles/             # Styles globaux
-
-public/                 # Assets statiques
+├── app/                 # Pages Next.js App Router
+│   ├── etudier/        # Page Étudier au Japon
+│   ├── travailler/     # Page Travailler au Japon
+│   ├── voyager/        # Page Voyager au Japon
+│   ├── preparer/       # Page Se Préparer
+│   ├── langue/         # Page Langue Japonaise
+│   ├── musique/        # Page Musique J-Pop/J-Rock
+│   ├── mode/           # Page Mode Japonaise
+│   ├── animes/         # Page Animés & Manga
+│   ├── lieux/          # Page Lieux & Destinations
+│   ├── traditions/     # Page Traditions
+│   ├── histoire/       # Page Histoire du Japon
+│   ├── forum/          # Page Forum Communauté
+│   ├── layout.tsx      # Layout racine
+│   ├── page.tsx        # Page d'accueil
+│   └── globals.css     # Styles globaux
+├── components/         # Composants réutilisables
+│   ├── Navbar.tsx      # Navigation principale
+│   ├── Footer.tsx      # Pied de page
+│   ├── Hero.tsx        # Section héro accueil
+│   ├── MegaMenu.tsx    # Méga-menu desktop
+│   ├── MobileMenu.tsx  # Menu mobile responsive
+│   ├── SearchComponent.tsx
+│   ├── FeaturedSections.tsx
+│   ├── LatestPosts.tsx
+│   └── NewsletterSignup.tsx
+└── context/           # Contextes React
+    └── AuthContext.tsx # Gestion authentification
 ```
 
 ## 🤝 Contribution
 
-Les contributions sont les bienvenues ! N'hésitez pas à :
-1. Fork le projet
-2. Créer une branche pour votre fonctionnalité
-3. Commit vos changements
-4. Push vers la branche
-5. Ouvrir une Pull Request
+1. **Fork** le projet
+2. **Créer** une branche (`git checkout -b feature/nouvelle-fonctionnalite`)
+3. **Commit** vos changements (`git commit -m 'Ajout nouvelle fonctionnalité'`)
+4. **Push** vers la branche (`git push origin feature/nouvelle-fonctionnalite`)
+5. **Ouvrir** une Pull Request
 
-## 📝 Licence
+## 📄 License
 
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+Projet sous licence MIT. Voir [LICENSE](LICENSE) pour plus de détails.
 
 ## 🙏 Remerciements
 
-- Icons et emojis pour l'interface utilisateur
-- Inspiration du design japonais traditionnel
-- Communauté Next.js et Tailwind CSS
+- Communauté Next.js
+- Équipe Tailwind CSS
+- Google Fonts (Noto Sans JP)
+- Communauté des développeurs passionnés du Japon
 
 ---
 
-Fait avec ❤️ pour les passionnés du Japon
+Créé avec ❤️ pour la communauté francophone passionnée du Japon

@@ -1,8 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { 
-  AcademicCapIcon, 
-  GlobeAltIcon, 
   CurrencyYenIcon, 
   HomeIcon,
   DocumentTextIcon,
@@ -183,7 +181,7 @@ export default function EtudierPage() {
           </div>
 
           <div className="space-y-12">
-            {steps.map((step, index) => (
+            {steps.map((step) => (
               <div key={step.step} className="flex items-center">
                 <div className="flex-shrink-0 w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-8">
                   {step.step}

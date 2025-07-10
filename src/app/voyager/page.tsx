@@ -27,7 +27,7 @@ export default function VoyagerPage() {
               <ul className="space-y-2 text-gray-700">
                 <li>• <strong>Tokyo :</strong> Shibuya, Shinjuku, Asakusa, Harajuku</li>
                 <li>• <strong>Kyoto :</strong> Fushimi Inari, Arashiyama, Gion</li>
-                <li>• <strong>Osaka :</strong> Dotonbori, Château d'Osaka, Kuromon Market</li>
+                <li>• <strong>Osaka :</strong> Dotonbori, Château d&apos;Osaka, Kuromon Market</li>
                 <li>• <strong>Nara :</strong> Parc aux cerfs, Todai-ji</li>
                 <li>• <strong>Hiroshima :</strong> Mémorial de la paix, Miyajima</li>
                 <li>• <strong>Mont Fuji :</strong> Kawaguchi-ko, Hakone</li>
@@ -77,20 +77,20 @@ export default function VoyagerPage() {
             </h3>
             <div className="prose text-gray-700">
               <p className="mb-4">
-                <strong>Hébergement :</strong> Réservez à l'avance, surtout pendant les saisons hautes. 
+                <strong>Hébergement :</strong> Réservez à l&apos;avance, surtout pendant les saisons hautes. 
                 Les ryokan offrent une expérience authentique, les capsule hotels sont économiques.
               </p>
               <p className="mb-4">
                 <strong>Nourriture :</strong> Essayez les konbini (supérettes 24h/24), les ramen shops, 
-                et n'hésitez pas à goûter la street food.
+                et n&apos;hésitez pas à goûter la street food.
               </p>
               <p className="mb-4">
                 <strong>Étiquette :</strong> Retirez vos chaussures dans les maisons, ne mangez pas 
-                en marchant, respectez les files d'attente.
+                en marchant, respectez les files d&apos;attente.
               </p>
               <p className="mb-4">
                 <strong>Langue :</strong> Apprenez quelques phrases de base en japonais, 
-                téléchargez Google Translate avec l'appareil photo.
+                téléchargez Google Translate avec l&apos;appareil photo.
               </p>
             </div>
           </div>

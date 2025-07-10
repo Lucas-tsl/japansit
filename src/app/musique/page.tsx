@@ -85,7 +85,7 @@ export default function MusiquePage() {
               <span className="block text-3xl mt-2 text-pink-200">日本音楽</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto">
-              Plongez dans l'univers fascinant de la musique japonaise, de la J-Pop moderne aux traditions ancestrales
+              Plongez dans l&apos;univers fascinant de la musique japonaise, de la J-Pop moderne aux traditions ancestrales
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -234,7 +234,7 @@ export default function MusiquePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">Partagez votre passion pour la musique japonaise</h2>
           <p className="text-xl mb-8">
-            Rejoignez notre communauté et découvrez de nouveaux artistes avec d'autres passionnés
+            Rejoignez notre communauté et découvrez de nouveaux artistes avec d&apos;autres passionnés
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
