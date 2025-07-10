@@ -7,14 +7,14 @@ export const metadata: Metadata = {
 
 export default function TraditionsPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-temple-gold/10 via-japan-red/5 to-sakura-pink/10 py-20">
+      <section className="bg-gradient-to-br from-temple-gold/10 via-japan-red/5 to-sakura-pink/10 dark:from-temple-gold/20 dark:via-japan-red/10 dark:to-sakura-pink/20 py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold text-japan-red mb-6 font-japanese">
+          <h1 className="text-5xl font-bold text-japan-red dark:text-japan-red-light-light mb-6 font-japanese">
             Traditions Japonaises
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Plongez dans l&apos;héritage culturel millénaire du Japon et ses traditions vivantes
           </p>
         </div>
@@ -24,15 +24,15 @@ export default function TraditionsPage() {
 
         {/* Tea Ceremony */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold text-japan-red mb-12 font-japanese text-center">
+          <h2 className="text-3xl font-bold text-japan-red dark:text-japan-red-light mb-12 font-japanese text-center">
             Arts Traditionnels
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
               <div className="h-48 bg-gradient-to-br from-bamboo-green to-temple-gold"></div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-japan-red mb-4">茶道 - Sado (Cérémonie du thé)</h3>
-                <p className="text-gray-600 mb-4">
+                <h3 className="text-2xl font-bold text-japan-red dark:text-japan-red-light mb-4">茶道 - Sado (Cérémonie du thé)</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
                   Art de préparer et de servir le thé matcha selon des règles précises, 
                   incarnant l&apos;harmonie, le respect, la pureté et la tranquillité.
                 </p>
@@ -53,11 +53,11 @@ export default function TraditionsPage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
               <div className="h-48 bg-gradient-to-br from-sakura-pink to-cherry-blossom"></div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-japan-red mb-4">華道 - Kado (Art floral)</h3>
-                <p className="text-gray-600 mb-4">
+                <h3 className="text-2xl font-bold text-japan-red dark:text-japan-red-light mb-4">華道 - Kado (Art floral)</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
                   L&apos;art d&apos;arranger les fleurs selon des principes esthétiques et spirituels, 
                   reflétant la beauté éphémère de la nature.
                 </p>
@@ -82,30 +82,30 @@ export default function TraditionsPage() {
 
         {/* Martial Arts */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold text-japan-red mb-12 font-japanese text-center">
+          <h2 className="text-3xl font-bold text-japan-red dark:text-japan-red-light mb-12 font-japanese text-center">
             Arts Martiaux
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-xl shadow-lg p-6">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
               <div className="h-32 bg-gradient-to-br from-japan-red to-sunset-orange rounded-lg mb-4"></div>
-              <h3 className="text-xl font-bold text-japan-red mb-2">空手 - Karate</h3>
-              <p className="text-gray-600 text-sm">
+              <h3 className="text-xl font-bold text-japan-red dark:text-japan-red-light mb-2">空手 - Karate</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">
                 Art martial à mains nues développé à Okinawa, basé sur la discipline et la maîtrise de soi.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-6">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
               <div className="h-32 bg-gradient-to-br from-indigo-blue to-sakura-pink rounded-lg mb-4"></div>
-              <h3 className="text-xl font-bold text-japan-red mb-2">柔道 - Judo</h3>
-              <p className="text-gray-600 text-sm">
+              <h3 className="text-xl font-bold text-japan-red dark:text-japan-red-light mb-2">柔道 - Judo</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">
                 &quot;La voie de la souplesse&quot;, art martial créé par Jigoro Kano, sport olympique.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-6">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
               <div className="h-32 bg-gradient-to-br from-bamboo-green to-temple-gold rounded-lg mb-4"></div>
-              <h3 className="text-xl font-bold text-japan-red mb-2">剣道 - Kendo</h3>
-              <p className="text-gray-600 text-sm">
+              <h3 className="text-xl font-bold text-japan-red dark:text-japan-red-light mb-2">剣道 - Kendo</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">
                 Escrime japonaise au sabre de bambou, héritière des techniques de sabre des samouraïs.
               </p>
             </div>
@@ -114,61 +114,61 @@ export default function TraditionsPage() {
 
         {/* Festivals */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold text-japan-red mb-12 font-japanese text-center">
+          <h2 className="text-3xl font-bold text-japan-red dark:text-japan-red-light mb-12 font-japanese text-center">
             Festivals & Célébrations
           </h2>
           <div className="space-y-8">
-            <div className="bg-white rounded-xl shadow-lg p-8">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-2xl font-bold text-japan-red mb-4">Festivals Saisonniers</h3>
+                  <h3 className="text-2xl font-bold text-japan-red dark:text-japan-red-light mb-4">Festivals Saisonniers</h3>
                   <ul className="space-y-4">
                     <li className="flex items-start">
                       <span className="text-2xl mr-3">🌸</span>
                       <div>
                         <strong>Hanami (Printemps)</strong>
-                        <p className="text-gray-600 text-sm">Observation des fleurs de cerisier</p>
+                        <p className="text-gray-600 dark:text-gray-300 text-sm">Observation des fleurs de cerisier</p>
                       </div>
                     </li>
                     <li className="flex items-start">
                       <span className="text-2xl mr-3">🎋</span>
                       <div>
                         <strong>Tanabata (Juillet)</strong>
-                        <p className="text-gray-600 text-sm">Festival des étoiles</p>
+                        <p className="text-gray-600 dark:text-gray-300 text-sm">Festival des étoiles</p>
                       </div>
                     </li>
                     <li className="flex items-start">
                       <span className="text-2xl mr-3">🍂</span>
                       <div>
                         <strong>Momijigari (Automne)</strong>
-                        <p className="text-gray-600 text-sm">Observation des feuilles colorées</p>
+                        <p className="text-gray-600 dark:text-gray-300 text-sm">Observation des feuilles colorées</p>
                       </div>
                     </li>
                   </ul>
                 </div>
 
                 <div>
-                  <h3 className="text-2xl font-bold text-japan-red mb-4">Célébrations Nationales</h3>
+                  <h3 className="text-2xl font-bold text-japan-red dark:text-japan-red-light mb-4">Célébrations Nationales</h3>
                   <ul className="space-y-4">
                     <li className="flex items-start">
                       <span className="text-2xl mr-3">🎌</span>
                       <div>
                         <strong>Nouvel An (Shogatsu)</strong>
-                        <p className="text-gray-600 text-sm">Fête la plus importante de l&apos;année</p>
+                        <p className="text-gray-600 dark:text-gray-300 text-sm">Fête la plus importante de l&apos;année</p>
                       </div>
                     </li>
                     <li className="flex items-start">
                       <span className="text-2xl mr-3">🎎</span>
                       <div>
                         <strong>Hinamatsuri (Mars)</strong>
-                        <p className="text-gray-600 text-sm">Fête des petites filles</p>
+                        <p className="text-gray-600 dark:text-gray-300 text-sm">Fête des petites filles</p>
                       </div>
                     </li>
                     <li className="flex items-start">
                       <span className="text-2xl mr-3">🎏</span>
                       <div>
                         <strong>Kodomo no Hi (Mai)</strong>
-                        <p className="text-gray-600 text-sm">Fête des enfants</p>
+                        <p className="text-gray-600 dark:text-gray-300 text-sm">Fête des enfants</p>
                       </div>
                     </li>
                   </ul>
@@ -180,13 +180,13 @@ export default function TraditionsPage() {
 
         {/* Philosophy & Religion */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold text-japan-red mb-12 font-japanese text-center">
+          <h2 className="text-3xl font-bold text-japan-red dark:text-japan-red-light mb-12 font-japanese text-center">
             Philosophie & Spiritualité
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-xl shadow-lg p-8">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
               <h3 className="text-2xl font-bold text-temple-gold mb-4">Bouddhisme</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Arrivé au Japon au 6ème siècle, le bouddhisme a profondément influencé la culture japonaise.
               </p>
               <div className="space-y-3">
@@ -194,37 +194,37 @@ export default function TraditionsPage() {
                   <span className="text-temple-gold mr-3">🏛️</span>
                   <div>
                     <strong>Zen</strong>
-                    <p className="text-gray-600 text-sm">Méditation et simplicité</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">Méditation et simplicité</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="text-temple-gold mr-3">🙏</span>
                   <div>
                     <strong>Terre Pure</strong>
-                    <p className="text-gray-600 text-sm">Dévotion à Amida Buddha</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">Dévotion à Amida Buddha</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-8">
-              <h3 className="text-2xl font-bold text-japan-red mb-4">Shintoïsme</h3>
-              <p className="text-gray-600 mb-4">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold text-japan-red dark:text-japan-red-light mb-4">Shintoïsme</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Religion autochtone du Japon, vénération des kami (divinités) et de la nature.
               </p>
               <div className="space-y-3">
                 <div className="flex items-start">
-                  <span className="text-japan-red mr-3">⛩️</span>
+                  <span className="text-japan-red dark:text-japan-red-light mr-3">⛩️</span>
                   <div>
                     <strong>Sanctuaires</strong>
-                    <p className="text-gray-600 text-sm">Lieux de culte des kami</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">Lieux de culte des kami</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="text-japan-red mr-3">🌿</span>
+                  <span className="text-japan-red dark:text-japan-red-light mr-3">🌿</span>
                   <div>
                     <strong>Purification</strong>
-                    <p className="text-gray-600 text-sm">Rituels de purification</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">Rituels de purification</p>
                   </div>
                 </div>
               </div>
@@ -234,63 +234,63 @@ export default function TraditionsPage() {
 
         {/* Traditional Crafts */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold text-japan-red mb-12 font-japanese text-center">
+          <h2 className="text-3xl font-bold text-japan-red dark:text-japan-red-light mb-12 font-japanese text-center">
             Artisanat Traditionnel
           </h2>
           <div className="grid md:grid-cols-4 gap-6">
-            <div className="bg-white rounded-xl shadow-lg p-6">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
               <div className="h-24 bg-gradient-to-br from-indigo-blue to-sakura-pink rounded-lg mb-4"></div>
-              <h3 className="font-bold text-japan-red mb-2">Céramique</h3>
-              <p className="text-gray-600 text-sm">Raku, Imari, Kutani</p>
+              <h3 className="font-bold text-japan-red dark:text-japan-red-light mb-2">Céramique</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">Raku, Imari, Kutani</p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-6">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
               <div className="h-24 bg-gradient-to-br from-temple-gold to-sunset-orange rounded-lg mb-4"></div>
-              <h3 className="font-bold text-japan-red mb-2">Laque</h3>
-              <p className="text-gray-600 text-sm">Urushi, art du vernissage</p>
+              <h3 className="font-bold text-japan-red dark:text-japan-red-light mb-2">Laque</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">Urushi, art du vernissage</p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-6">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
               <div className="h-24 bg-gradient-to-br from-bamboo-green to-temple-gold rounded-lg mb-4"></div>
-              <h3 className="font-bold text-japan-red mb-2">Textile</h3>
-              <p className="text-gray-600 text-sm">Kimono, teinture</p>
+              <h3 className="font-bold text-japan-red dark:text-japan-red-light mb-2">Textile</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">Kimono, teinture</p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-6">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
               <div className="h-24 bg-gradient-to-br from-japan-red to-sunset-orange rounded-lg mb-4"></div>
-              <h3 className="font-bold text-japan-red mb-2">Ferronnerie</h3>
-              <p className="text-gray-600 text-sm">Katana, outils</p>
+              <h3 className="font-bold text-japan-red dark:text-japan-red-light mb-2">Ferronnerie</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">Katana, outils</p>
             </div>
           </div>
         </section>
 
         {/* Values */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold text-japan-red mb-12 font-japanese text-center">
+          <h2 className="text-3xl font-bold text-japan-red dark:text-japan-red-light mb-12 font-japanese text-center">
             Valeurs Traditionnelles
           </h2>
-          <div className="bg-white rounded-xl shadow-lg p-8">
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="text-4xl mb-4">🙏</div>
-                <h3 className="text-xl font-bold text-japan-red mb-2">Respect</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-xl font-bold text-japan-red dark:text-japan-red-light mb-2">Respect</h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">
                   Respect des autres, des anciens et de la nature
                 </p>
               </div>
 
               <div className="text-center">
                 <div className="text-4xl mb-4">⚖️</div>
-                <h3 className="text-xl font-bold text-japan-red mb-2">Harmonie</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-xl font-bold text-japan-red dark:text-japan-red-light mb-2">Harmonie</h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">
                   Équilibre et éviter les conflits
                 </p>
               </div>
 
               <div className="text-center">
                 <div className="text-4xl mb-4">💪</div>
-                <h3 className="text-xl font-bold text-japan-red mb-2">Persévérance</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-xl font-bold text-japan-red dark:text-japan-red-light mb-2">Persévérance</h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">
                   Gaman - endurance et détermination
                 </p>
               </div>

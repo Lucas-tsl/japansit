@@ -7,14 +7,14 @@ export const metadata: Metadata = {
 
 export default function HistoirePage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-japan-red/10 via-temple-gold/5 to-cherry-blossom/10 py-20">
+      <section className="bg-gradient-to-br from-japan-red/10 via-temple-gold/5 to-cherry-blossom/10 dark:from-japan-red/20 dark:via-temple-gold/10 dark:to-cherry-blossom/20 py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold text-japan-red mb-6 font-japanese">
+          <h1 className="text-5xl font-bold text-japan-red dark:text-japan-red-light-light mb-6 font-japanese">
             Histoire du Japon
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Découvrez l&apos;histoire fascinante du Japon, des origines aux temps modernes
           </p>
         </div>
@@ -24,20 +24,20 @@ export default function HistoirePage() {
 
         {/* Timeline */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold text-japan-red mb-12 font-japanese text-center">
+          <h2 className="text-3xl font-bold text-japan-red dark:text-japan-red-light-light mb-12 font-japanese text-center">
             Grandes Époques
           </h2>
           <div className="space-y-8">
             {/* Jomon Period */}
-            <div className="bg-white rounded-xl shadow-lg p-8">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-japan-red mb-2">14 000 - 300 av. J.-C.</div>
+                  <div className="text-2xl font-bold text-japan-red dark:text-japan-red-light mb-2">14 000 - 300 av. J.-C.</div>
                   <div className="text-lg font-semibold text-gray-700">Période Jomon</div>
                 </div>
                 <div className="md:col-span-3">
-                  <h3 className="text-xl font-bold text-japan-red mb-3">縄文時代 - Jomon</h3>
-                  <p className="text-gray-600 mb-4">
+                  <h3 className="text-xl font-bold text-japan-red dark:text-japan-red-light mb-3">縄文時代 - Jomon</h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
                     Première civilisation japonaise connue, caractérisée par une culture de chasseurs-cueilleurs 
                     et une poterie décorée de cordes (jomon).
                   </p>
@@ -56,15 +56,15 @@ export default function HistoirePage() {
             </div>
 
             {/* Heian Period */}
-            <div className="bg-white rounded-xl shadow-lg p-8">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-sakura-pink mb-2">794 - 1185</div>
                   <div className="text-lg font-semibold text-gray-700">Période Heian</div>
                 </div>
                 <div className="md:col-span-3">
-                  <h3 className="text-xl font-bold text-japan-red mb-3">平安時代 - Heian</h3>
-                  <p className="text-gray-600 mb-4">
+                  <h3 className="text-xl font-bold text-japan-red dark:text-japan-red-light mb-3">平安時代 - Heian</h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
                     Âge d&apos;or de la culture aristocratique japonaise, naissance de la littérature classique 
                     et raffinement des arts.
                   </p>
@@ -83,15 +83,15 @@ export default function HistoirePage() {
             </div>
 
             {/* Kamakura Period */}
-            <div className="bg-white rounded-xl shadow-lg p-8">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-indigo-blue mb-2">1185 - 1333</div>
                   <div className="text-lg font-semibold text-gray-700">Période Kamakura</div>
                 </div>
                 <div className="md:col-span-3">
-                  <h3 className="text-xl font-bold text-japan-red mb-3">鎌倉時代 - Kamakura</h3>
-                  <p className="text-gray-600 mb-4">
+                  <h3 className="text-xl font-bold text-japan-red dark:text-japan-red-light mb-3">鎌倉時代 - Kamakura</h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
                     Premier shogunat, naissance de la classe guerrière et du bouddhisme zen. 
                     Invasions mongoles repoussées.
                   </p>
@@ -110,15 +110,15 @@ export default function HistoirePage() {
             </div>
 
             {/* Edo Period */}
-            <div className="bg-white rounded-xl shadow-lg p-8">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-bamboo-green mb-2">1603 - 1868</div>
                   <div className="text-lg font-semibold text-gray-700">Période Edo</div>
                 </div>
                 <div className="md:col-span-3">
-                  <h3 className="text-xl font-bold text-japan-red mb-3">江戸時代 - Edo</h3>
-                  <p className="text-gray-600 mb-4">
+                  <h3 className="text-xl font-bold text-japan-red dark:text-japan-red-light mb-3">江戸時代 - Edo</h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
                     Ère de paix sous les Tokugawa, isolement du pays (sakoku), développement 
                     de la culture urbaine et des arts.
                   </p>
@@ -137,15 +137,15 @@ export default function HistoirePage() {
             </div>
 
             {/* Meiji Era */}
-            <div className="bg-white rounded-xl shadow-lg p-8">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-sunset-orange mb-2">1868 - 1912</div>
                   <div className="text-lg font-semibold text-gray-700">Ère Meiji</div>
                 </div>
                 <div className="md:col-span-3">
-                  <h3 className="text-xl font-bold text-japan-red mb-3">明治時代 - Meiji</h3>
-                  <p className="text-gray-600 mb-4">
+                  <h3 className="text-xl font-bold text-japan-red dark:text-japan-red-light mb-3">明治時代 - Meiji</h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
                     Restauration impériale, modernisation rapide, ouverture à l&apos;Occident 
                     et transformation en puissance mondiale.
                   </p>
@@ -167,15 +167,15 @@ export default function HistoirePage() {
 
         {/* Key Figures */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold text-japan-red mb-12 font-japanese text-center">
+          <h2 className="text-3xl font-bold text-japan-red dark:text-japan-red-light mb-12 font-japanese text-center">
             Personnages Historiques
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
               <div className="h-48 bg-gradient-to-br from-japan-red to-sunset-orange"></div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-japan-red mb-2">Oda Nobunaga</h3>
-                <p className="text-gray-600 text-sm mb-4">
+                <h3 className="text-xl font-bold text-japan-red dark:text-japan-red-light mb-2">Oda Nobunaga</h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
                   Daimyo révolutionnaire qui débuta l&apos;unification du Japon au 16ème siècle.
                 </p>
                 <div className="text-sm text-gray-500">
@@ -184,11 +184,11 @@ export default function HistoirePage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
               <div className="h-48 bg-gradient-to-br from-temple-gold to-sunset-orange"></div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-japan-red mb-2">Tokugawa Ieyasu</h3>
-                <p className="text-gray-600 text-sm mb-4">
+                <h3 className="text-xl font-bold text-japan-red dark:text-japan-red-light mb-2">Tokugawa Ieyasu</h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
                   Fondateur du shogunat Tokugawa qui gouverna le Japon pendant 265 ans.
                 </p>
                 <div className="text-sm text-gray-500">
@@ -197,11 +197,11 @@ export default function HistoirePage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
               <div className="h-48 bg-gradient-to-br from-indigo-blue to-sakura-pink"></div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-japan-red mb-2">Empereur Meiji</h3>
-                <p className="text-gray-600 text-sm mb-4">
+                <h3 className="text-xl font-bold text-japan-red dark:text-japan-red-light mb-2">Empereur Meiji</h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
                   Empereur qui présida à la modernisation et à l&apos;ouverture du Japon.
                 </p>
                 <div className="text-sm text-gray-500">
@@ -214,59 +214,59 @@ export default function HistoirePage() {
 
         {/* Cultural Evolution */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold text-japan-red mb-12 font-japanese text-center">
+          <h2 className="text-3xl font-bold text-japan-red dark:text-japan-red-light mb-12 font-japanese text-center">
             Évolution Culturelle
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-xl shadow-lg p-8">
-              <h3 className="text-2xl font-bold text-japan-red mb-4">Arts & Littérature</h3>
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold text-japan-red dark:text-japan-red-light mb-4">Arts & Littérature</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
-                  <span className="text-japan-red mr-3">📚</span>
+                  <span className="text-japan-red dark:text-japan-red-light mr-3">📚</span>
                   <div>
                     <strong>Époque Heian</strong>
-                    <p className="text-gray-600 text-sm">Le Dit du Genji, premier roman au monde</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">Le Dit du Genji, premier roman au monde</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-japan-red mr-3">🎭</span>
+                  <span className="text-japan-red dark:text-japan-red-light mr-3">🎭</span>
                   <div>
                     <strong>Époque Kamakura</strong>
-                    <p className="text-gray-600 text-sm">Naissance du théâtre Nô</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">Naissance du théâtre Nô</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-japan-red mr-3">🎨</span>
+                  <span className="text-japan-red dark:text-japan-red-light mr-3">🎨</span>
                   <div>
                     <strong>Époque Edo</strong>
-                    <p className="text-gray-600 text-sm">Ukiyo-e et culture populaire</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">Ukiyo-e et culture populaire</p>
                   </div>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-8">
-              <h3 className="text-2xl font-bold text-japan-red mb-4">Innovations Sociales</h3>
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold text-japan-red dark:text-japan-red-light mb-4">Innovations Sociales</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <span className="text-temple-gold mr-3">⚖️</span>
                   <div>
                     <strong>Système des Castes</strong>
-                    <p className="text-gray-600 text-sm">Shi-no-ko-sho (guerriers, fermiers, artisans, marchands)</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">Shi-no-ko-sho (guerriers, fermiers, artisans, marchands)</p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <span className="text-temple-gold mr-3">🏫</span>
                   <div>
                     <strong>Éducation</strong>
-                    <p className="text-gray-600 text-sm">Écoles temple (terakoya) pendant Edo</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">Écoles temple (terakoya) pendant Edo</p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <span className="text-temple-gold mr-3">🌾</span>
                   <div>
                     <strong>Agriculture</strong>
-                    <p className="text-gray-600 text-sm">Techniques avancées de riziculture</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">Techniques avancées de riziculture</p>
                   </div>
                 </li>
               </ul>
@@ -276,31 +276,31 @@ export default function HistoirePage() {
 
         {/* Modern Era */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold text-japan-red mb-12 font-japanese text-center">
+          <h2 className="text-3xl font-bold text-japan-red dark:text-japan-red-light mb-12 font-japanese text-center">
             Japon Moderne
           </h2>
-          <div className="bg-white rounded-xl shadow-lg p-8">
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="text-4xl mb-4">🏭</div>
-                <h3 className="text-xl font-bold text-japan-red mb-2">Industrialisation</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-xl font-bold text-japan-red dark:text-japan-red-light mb-2">Industrialisation</h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">
                   Transformation rapide en puissance industrielle moderne
                 </p>
               </div>
 
               <div className="text-center">
                 <div className="text-4xl mb-4">🗾</div>
-                <h3 className="text-xl font-bold text-japan-red mb-2">Reconstruction</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-xl font-bold text-japan-red dark:text-japan-red-light mb-2">Reconstruction</h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">
                   Miracle économique d&apos;après-guerre (1945-1990)
                 </p>
               </div>
 
               <div className="text-center">
                 <div className="text-4xl mb-4">🎯</div>
-                <h3 className="text-xl font-bold text-japan-red mb-2">Innovation</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="text-xl font-bold text-japan-red dark:text-japan-red-light mb-2">Innovation</h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">
                   Leader mondial en technologie et culture populaire
                 </p>
               </div>
@@ -310,39 +310,39 @@ export default function HistoirePage() {
 
         {/* Historical Sites */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold text-japan-red mb-12 font-japanese text-center">
+          <h2 className="text-3xl font-bold text-japan-red dark:text-japan-red-light mb-12 font-japanese text-center">
             Sites Historiques
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
               <div className="h-32 bg-gradient-to-br from-japan-red to-sunset-orange"></div>
               <div className="p-4">
-                <h3 className="font-bold text-japan-red mb-2">Château d&apos;Himeji</h3>
-                <p className="text-gray-600 text-sm">Chef-d&apos;œuvre d&apos;architecture militaire</p>
+                <h3 className="font-bold text-japan-red dark:text-japan-red-light mb-2">Château d&apos;Himeji</h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">Chef-d&apos;œuvre d&apos;architecture militaire</p>
               </div>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
               <div className="h-32 bg-gradient-to-br from-temple-gold to-sunset-orange"></div>
               <div className="p-4">
-                <h3 className="font-bold text-japan-red mb-2">Nijo-jo</h3>
-                <p className="text-gray-600 text-sm">Palais des shogun Tokugawa</p>
+                <h3 className="font-bold text-japan-red dark:text-japan-red-light mb-2">Nijo-jo</h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">Palais des shogun Tokugawa</p>
               </div>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
               <div className="h-32 bg-gradient-to-br from-indigo-blue to-sakura-pink"></div>
               <div className="p-4">
-                <h3 className="font-bold text-japan-red mb-2">Hiroshima</h3>
-                <p className="text-gray-600 text-sm">Mémorial de la paix</p>
+                <h3 className="font-bold text-japan-red dark:text-japan-red-light mb-2">Hiroshima</h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">Mémorial de la paix</p>
               </div>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
               <div className="h-32 bg-gradient-to-br from-bamboo-green to-temple-gold"></div>
               <div className="p-4">
-                <h3 className="font-bold text-japan-red mb-2">Nikko</h3>
-                <p className="text-gray-600 text-sm">Sanctuaires et mausolées</p>
+                <h3 className="font-bold text-japan-red dark:text-japan-red-light mb-2">Nikko</h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">Sanctuaires et mausolées</p>
               </div>
             </div>
           </div>
@@ -355,7 +355,7 @@ export default function HistoirePage() {
             <p className="text-lg mb-6">
               Explorez comment l&apos;histoire a façonné les traditions japonaises d&apos;aujourd&apos;hui
             </p>
-            <button className="bg-white text-japan-red font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-japan-red dark:text-japan-red-light font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-colors">
               Explorer les Traditions
             </button>
           </div>
