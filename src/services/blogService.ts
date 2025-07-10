@@ -245,4 +245,72 @@ export class BlogService {
       hasPrevious: currentPage > 1
     };
   }
+
+  // Nouvelles méthodes pour les filtres avancés
+  getPostsWithFilters(options: {
+    category?: string;
+    tag?: string;
+    search?: string;
+    sort?: 'newest' | 'oldest' | 'popular';
+    page?: number;
+    limit?: number;
+  } = {}): { posts: BlogPost[], totalCount: number } {
+    const { category, tag, search, sort = 'newest', page = 1, limit = 10 } = options;
+    
+    let posts = blogPosts.filter(post => post.status === 'published');
+
+    // Filtrage par recherche
+    if (search && search.trim()) {
+      posts = this.searchPosts(search, posts.length);
+    }
+
+    // Filtrage par catégorie
+    if (category) {
+      posts = posts.filter(post => post.category === category);
+    }
+
+    // Filtrage par tag
+    if (tag) {
+      posts = posts.filter(post => post.tags.includes(tag));
+    }
+
+    // Tri
+    posts.sort((a, b) => {
+      switch (sort) {
+        case 'oldest':
+          return new Date(a.publishedAt).getTime() - new Date(b.publishedAt).getTime();
+        case 'popular':
+          // Pour l'instant, utilisons l'ID comme proxy pour la popularité
+          return b.id.localeCompare(a.id);
+        case 'newest':
+        default:
+          return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
+      }
+    });
+
+    const totalCount = posts.length;
+    const offset = (page - 1) * limit;
+    const paginatedPosts = posts.slice(offset, offset + limit);
+
+    return {
+      posts: paginatedPosts,
+      totalCount
+    };
+  }
+
+  // Méthode pour obtenir les articles par popularité
+  getPopularPosts(limit: number = 5): BlogPost[] {
+    return blogPosts
+      .filter(post => post.status === 'published')
+      .sort((a, b) => b.id.localeCompare(a.id)) // Proxy pour la popularité
+      .slice(0, limit);
+  }
+
+  // Méthode pour obtenir les articles récents d'une catégorie
+  getRecentPostsByCategory(categoryId: string, limit: number = 3): BlogPost[] {
+    return blogPosts
+      .filter(post => post.status === 'published' && post.category === categoryId)
+      .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
+      .slice(0, limit);
+  }
 }
