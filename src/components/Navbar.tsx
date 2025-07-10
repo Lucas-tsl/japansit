@@ -1,19 +1,19 @@
 import Link from 'next/link';
-import SearchComponent from './SearchComponent';
+import SearchComponentSimple from './SearchComponentSimple';
 import MegaMenu from './MegaMenu';
 import MobileMenu from './MobileMenu';
 
 export default function Navbar() {
   return (
     <>
-      <nav className="bg-white shadow-lg sticky top-0 z-50">
+      <nav className="bg-white shadow-lg sticky top-0 z-50 animate-slide-down">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center">
-              <Link href="/" className="flex items-center space-x-2">
-                <span className="text-2xl">🇯🇵</span>
-                <span className="text-xl font-bold text-gradient-japan font-japanese">JapanSit</span>
+              <Link href="/" className="flex items-center space-x-2 hover-scale smooth-transition">
+                <span className="text-2xl animate-bounce-gentle">🇯🇵</span>
+                <span className="text-xl font-bold gradient-text-japan font-japanese">JapanSit</span>
               </Link>
             </div>
 
@@ -25,17 +25,17 @@ export default function Navbar() {
             {/* Search & Auth */}
             <div className="hidden md:flex items-center space-x-4">
               <div className="w-64">
-                <SearchComponent />
+                <SearchComponentSimple />
               </div>
               <a
                 href="/login"
-                className="text-gray-700 hover:text-japan-red transition-colors font-medium"
+                className="text-gray-700 hover:text-japan-red transition-colors font-medium hover-lift smooth-transition"
               >
                 Connexion
               </a>
               <a
                 href="/signup"
-                className="bg-japan-red text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors font-medium"
+                className="bg-japan-red text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors font-medium hover-lift micro-bounce"
               >
                 Inscription
               </a>

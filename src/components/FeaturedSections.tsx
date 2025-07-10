@@ -4,25 +4,29 @@ export default function FeaturedSections() {
       title: 'Étudier au Japon',
       description: 'Universités, bourses, processus d\'admission et conseils pour étudier au Japon',
       href: '/etudier',
-      color: 'bg-blue-500'
+      color: 'bg-indigo-blue',
+      emoji: '🎓'
     },
     {
       title: 'Travailler au Japon',
       description: 'Opportunités professionnelles, visa de travail et culture d\'entreprise',
       href: '/travailler',
-      color: 'bg-green-500'
+      color: 'bg-bamboo-green',
+      emoji: '💼'
     },
     {
       title: 'Voyager au Japon',
       description: 'Destinations, itinéraires, conseils pratiques et expériences uniques',
       href: '/voyager',
-      color: 'bg-purple-500'
+      color: 'bg-sakura-pink',
+      emoji: '✈️'
     },
     {
       title: 'Se Préparer',
       description: 'Visa, logement, vol, restauration et toutes les démarches pratiques',
       href: '/preparer',
-      color: 'bg-orange-500'
+      color: 'bg-sunset-orange',
+      emoji: '📋'
     },
     {
       title: 'Musique Japonaise',
@@ -46,59 +50,65 @@ export default function FeaturedSections() {
       title: 'Lieux Incontournables',
       description: 'Temples, villes, parcs naturels et destinations secrètes',
       href: '/lieux',
-      color: 'bg-yellow-500'
+      color: 'bg-temple-gold',
+      emoji: '🏯'
     },
     {
       title: 'Animés & Manga',
       description: 'Studios, œuvres cultes, culture otaku et nouveautés',
       href: '/animes',
-      color: 'bg-teal-500'
+      color: 'bg-indigo-blue',
+      emoji: '🎌'
     },
     {
       title: 'Traditions',
       description: 'Cérémonies, arts martiaux, festivals et patrimoine culturel',
       href: '/traditions',
-      color: 'bg-amber-500'
+      color: 'bg-japan-red',
+      emoji: '🏮'
     },
     {
       title: 'Histoire du Japon',
       description: 'Époques, personnages historiques et évolution culturelle',
       href: '/histoire',
-      color: 'bg-slate-500'
+      color: 'bg-cherry-blossom',
+      emoji: '📜'
     },
     {
       title: 'Forum Communauté',
       description: 'Échanges, conseils et partages d\'expériences avec la communauté',
       href: '/forum',
-      color: 'bg-cyan-500'
+      color: 'bg-bamboo-green',
+      emoji: '💬'
     }
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-white texture-paper">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-16 animate-soft-zoom">
+          <h2 className="text-4xl font-bold text-japan-red mb-4 font-japanese animate-color-pulse">
             Explorez le Japon
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-elegant-slide delay-200">
             Découvrez tous les aspects de la culture japonaise et préparez votre aventure au pays du soleil levant
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {sections.map((section) => (
+          {sections.map((section, index) => (
             <a
               key={section.title}
               href={section.href}
-              className="group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
+              className={`group relative bg-white rounded-2xl japanese-shadow hover:japanese-shadow-hover hover-lift smooth-transition overflow-hidden animate-fade-in-up hover-glow micro-bounce`}
+              style={{animationDelay: `${index * 150}ms`}}
             >
               <div className="relative p-8">
-                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full ${section.color} mb-6`}>
-                  <span className="text-white text-2xl">🇯🇵</span>
+                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full ${section.color} mb-6 animate-breathe hover-scale`}>
+                  <span className="text-white text-2xl">{section.emoji}</span>
                 </div>
                 
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-gray-800 transition-colors">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-japan-red smooth-transition">
                   {section.title}
                 </h3>
                 
@@ -108,9 +118,12 @@ export default function FeaturedSections() {
                 
                 <div className="flex items-center text-sm font-medium group-hover:text-gray-700 transition-colors">
                   <span>En savoir plus</span>
-                  <span className="ml-2">→</span>
+                  <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
                 </div>
               </div>
+              
+              {/* Effet de vague au hover */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transform -translate-x-full group-hover:translate-x-full transition-all duration-700 ease-out"></div>
             </a>
           ))}
         </div>

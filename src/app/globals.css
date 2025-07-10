@@ -50,6 +50,255 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ========================================
+   ANIMATIONS JAPONAISES
+======================================== */
+
+/* Animations d'entrée */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animations de mouvement */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-gentle {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceGentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Classes d'animation */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 0.6s ease-out;
+}
+
+.animate-fade-in-right {
+  animation: fadeInRight 0.6s ease-out;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-gentle {
+  animation: pulse-gentle 2s ease-in-out infinite;
+}
+
+.animate-bounce-gentle {
+  animation: bounceGentle 2s ease-in-out infinite;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.3s ease-out;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+  background: linear-gradient(to right, #eff6ff 4%, #dbeafe 25%, #eff6ff 36%);
+  background-size: 1000px 100%;
+}
+
+/* Delays pour animations séquentielles */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+
+/* ========================================
+   EFFETS JAPONAIS
+======================================== */
+
+/* Hover effects */
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(220, 20, 60, 0.15);
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Ombres japonaises */
+.japanese-shadow {
+  box-shadow: 0 4px 20px rgba(220, 20, 60, 0.1);
+}
+
+.japanese-shadow-hover:hover {
+  box-shadow: 0 8px 30px rgba(220, 20, 60, 0.2);
+}
+
+/* Bordures japonaises */
+.japanese-border {
+  border: 2px solid #DC143C;
+  border-image: linear-gradient(45deg, #DC143C, #FFD700, #DC143C) 1;
+}
+
+/* Dégradés de texte */
+.gradient-text-japan {
+  background: linear-gradient(45deg, #DC143C, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Boutons japonais */
+.btn-japan {
+  background: linear-gradient(45deg, #DC143C, #FF6B6B);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-japan::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-japan:hover::before {
+  left: 100%;
+}
+
+.btn-japan:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(220, 20, 60, 0.3);
+}
+
+/* Transitions fluides */
+.smooth-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* États de focus améliorés */
+.focus-japan:focus {
+  outline: 2px solid #DC143C;
+  outline-offset: 2px;
+}
+
+/* Scroll reveal */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Loading skeleton */
+.loading-skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
 /* Custom animations */
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -78,91 +327,286 @@ html {
   animation: bounceGentle 2s infinite;
 }
 
-/* Typography */
-.font-japanese {
-  font-family: 'Noto Sans JP', sans-serif;
-}
+/* ========================================
+   ANIMATIONS JAPONAISES AVANCÉES
+======================================== */
 
-.font-modern {
-  font-family: 'Inter', sans-serif;
-}
-
-/* Utilities */
-.text-shadow {
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-}
-
-.bg-gradient-japan {
-  background: linear-gradient(135deg, #DC143C 0%, #FF8C00 100%);
-}
-
-.bg-gradient-sakura {
-  background: linear-gradient(135deg, #FFB7C5 0%, #FFCCCB 100%);
-}
-
-.bg-gradient-night {
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-}
-
-/* MegaMenu custom styles */
-.mega-menu-dropdown {
-  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.mega-menu-item:hover {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  transform: translateY(-1px);
-}
-
-/* Mobile menu animations */
-.mobile-menu-enter {
-  animation: slideDown 0.3s ease-out;
-}
-
-@keyframes slideDown {
-  from {
+/* Animation de cerisier qui tombe */
+@keyframes sakura-fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
     opacity: 0;
-    transform: translateY(-10px);
+  }
+}
+
+/* Animation de vague japonaise */
+@keyframes wave {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Animation de respiration zen */
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes brush-stroke {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Animation de rotation douce */
+@keyframes gentle-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation de pulsation colorée */
+@keyframes color-pulse {
+  0%, 100% {
+    color: #DC143C;
+  }
+  50% {
+    color: #FFD700;
+  }
+}
+
+/* Animation de glissement élégant */
+@keyframes elegant-slide {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animation de zoom doux */
+@keyframes soft-zoom {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Animation de reveal progressif */
+@keyframes reveal-progress {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+/* Classes d'animation avancées */
+.animate-sakura-fall {
+  animation: sakura-fall 8s linear infinite;
+}
+
+.animate-wave {
+  animation: wave 4s ease-in-out infinite;
+}
+
+.animate-breathe {
+  animation: breathe 4s ease-in-out infinite;
+}
+
+.animate-brush-stroke {
+  animation: brush-stroke 2s ease-out;
+}
+
+.animate-gentle-rotate {
+  animation: gentle-rotate 20s linear infinite;
+}
+
+.animate-color-pulse {
+  animation: color-pulse 3s ease-in-out infinite;
+}
+
+.animate-elegant-slide {
+  animation: elegant-slide 0.8s ease-out;
+}
+
+.animate-soft-zoom {
+  animation: soft-zoom 0.6s ease-out;
+}
+
+.animate-reveal-progress {
+  animation: reveal-progress 1s ease-out;
+}
+
+/* Effets de parallaxe */
+.parallax-slow {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Animations sur hover avancées */
+.hover-glow {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.hover-glow::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #DC143C, #FFD700, #DC143C);
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.hover-glow:hover::before {
+  opacity: 1;
+}
+
+.hover-glow:hover {
+  transform: translateY(-2px);
+}
+
+/* Animation de typewriter */
+@keyframes typewriter {
+  from {
+    width: 0;
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+    width: 100%;
   }
 }
 
-/* Improved hover effects */
-.nav-link {
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #DC143C;
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid #DC143C;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typewriter 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Particules flottantes */
+.floating-particles {
   position: relative;
   overflow: hidden;
 }
 
-.nav-link::before {
+.floating-particles::before,
+.floating-particles::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, #DC143C, #FF8C00);
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  background: #FFD700;
+  border-radius: 50%;
+  animation: float 6s ease-in-out infinite;
 }
 
-.nav-link:hover::before {
-  width: 100%;
+.floating-particles::before {
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
 }
 
-/* Japanese theme enhancements */
-.japanese-shadow {
-  box-shadow: 0 4px 20px rgba(220, 20, 60, 0.1);
+.floating-particles::after {
+  top: 60%;
+  right: 15%;
+  animation-delay: 3s;
 }
 
-.text-gradient-japan {
-  background: linear-gradient(135deg, #DC143C 0%, #FF8C00 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+/* Transitions de page */
+.page-transition {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Micro-interactions */
+.micro-bounce {
+  transition: transform 0.2s ease;
+}
+
+.micro-bounce:active {
+  transform: scale(0.95);
+}
+
+/* Animation de chargement japonaise */
+@keyframes loading-japan {
+  0% {
+    transform: rotate(0deg);
+    border-color: #DC143C transparent transparent transparent;
+  }
+  25% {
+    border-color: #FFD700 transparent transparent transparent;
+  }
+  50% {
+    border-color: #DC143C transparent transparent transparent;
+  }
+  75% {
+    border-color: #FFD700 transparent transparent transparent;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-color: #DC143C transparent transparent transparent;
+  }
+}
+
+.loading-japan {
+  border: 3px solid transparent;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: loading-japan 1.5s linear infinite;
+}
+
+/* Effets de texture */
+.texture-paper {
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(220, 20, 60, 0.1) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+.texture-bamboo {
+  background-image: 
+    linear-gradient(90deg, transparent 75%, rgba(34, 139, 34, 0.1) 75%);
+  background-size: 4px 4px;
 }
