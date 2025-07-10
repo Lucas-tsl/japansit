@@ -1,3 +1,6 @@
+import FavoriteButton from './FavoriteButton';
+import ShareButton from './ShareButton';
+
 export default function FeaturedSections() {
   const sections = [
     {
@@ -97,34 +100,46 @@ export default function FeaturedSections() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {sections.map((section, index) => (
-            <a
+            <div
               key={section.title}
-              href={section.href}
-              className={`group relative bg-white rounded-2xl japanese-shadow hover:japanese-shadow-hover hover-lift smooth-transition overflow-hidden animate-fade-in-up hover-glow micro-bounce`}
-              style={{animationDelay: `${index * 150}ms`}}
+              className={`group relative bg-white dark:bg-gray-800 rounded-2xl japanese-shadow hover:japanese-shadow-hover hover-lift smooth-transition overflow-hidden animate-fade-in-up hover-glow micro-bounce theme-transition delay-${index * 150}`}
             >
-              <div className="relative p-8">
+              {/* Boutons d'action */}
+              <div className="absolute top-4 right-4 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                <FavoriteButton 
+                  itemId={section.href} 
+                  itemTitle={section.title}
+                  className="scale-90"
+                />
+                <ShareButton 
+                  title={section.title}
+                  description={section.description}
+                  className="scale-90"
+                />
+              </div>
+
+              <a href={section.href} className="block p-8">
                 <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full ${section.color} mb-6 animate-breathe hover-scale`}>
                   <span className="text-white text-2xl">{section.emoji}</span>
                 </div>
                 
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-japan-red smooth-transition">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 group-hover:text-japan-red smooth-transition">
                   {section.title}
                 </h3>
                 
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
                   {section.description}
                 </p>
                 
-                <div className="flex items-center text-sm font-medium group-hover:text-gray-700 transition-colors">
+                <div className="flex items-center text-sm font-medium group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors">
                   <span>En savoir plus</span>
                   <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
                 </div>
-              </div>
+              </a>
               
               {/* Effet de vague au hover */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transform -translate-x-full group-hover:translate-x-full transition-all duration-700 ease-out"></div>
-            </a>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transform -translate-x-full group-hover:translate-x-full transition-all duration-700 ease-out pointer-events-none"></div>
+            </div>
           ))}
         </div>
       </div>

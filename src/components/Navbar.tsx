@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import SearchComponentSimple from './SearchComponentSimple';
+import ThemeToggle from './ThemeToggle';
 import MegaMenu from './MegaMenu';
 import MobileMenu from './MobileMenu';
 
 export default function Navbar() {
   return (
     <>
-      <nav className="bg-white shadow-lg sticky top-0 z-50 animate-slide-down">
+      <nav className="bg-white dark:bg-gray-900 shadow-lg sticky top-0 z-50 animate-slide-down theme-transition">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
@@ -27,9 +28,10 @@ export default function Navbar() {
               <div className="w-64">
                 <SearchComponentSimple />
               </div>
+              <ThemeToggle />
               <a
                 href="/login"
-                className="text-gray-700 hover:text-japan-red transition-colors font-medium hover-lift smooth-transition"
+                className="text-gray-700 dark:text-gray-300 hover:text-japan-red transition-colors font-medium hover-lift smooth-transition"
               >
                 Connexion
               </a>

@@ -1,30 +1,39 @@
+import ShareButton from './ShareButton';
+
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-900 dark:bg-black text-white theme-transition">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <span className="text-2xl">🇯🇵</span>
+              <span className="text-2xl animate-bounce-gentle">🇯🇵</span>
               <span className="text-xl font-bold text-red-600">JapanSit</span>
             </div>
             <p className="text-gray-300 mb-4">
               Votre guide ultime pour découvrir, étudier, travailler et vivre au Japon.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-2xl hover:text-red-600 transition-colors">📺</a>
-              <a href="#" className="text-2xl hover:text-red-600 transition-colors">📸</a>
-              <a href="#" className="text-2xl hover:text-red-600 transition-colors">🐦</a>
+            <div className="flex items-center space-x-4">
+              <div className="flex space-x-4">
+                <a href="#" className="text-2xl hover:text-red-600 transition-colors hover-scale">📺</a>
+                <a href="#" className="text-2xl hover:text-red-600 transition-colors hover-scale">📸</a>
+                <a href="#" className="text-2xl hover:text-red-600 transition-colors hover-scale">🐦</a>
+              </div>
+              <ShareButton 
+                title="JapanSit - Votre guide du Japon"
+                description="Découvrez, étudiez, travaillez et vivez au Japon"
+                className="ml-4"
+              />
             </div>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold mb-4 text-yellow-400">Découvrir</h3>
             <ul className="space-y-2">
-              <li><a href="/etudier" className="text-gray-300 hover:text-white transition-colors">Étudier au Japon</a></li>
-              <li><a href="/travailler" className="text-gray-300 hover:text-white transition-colors">Travailler au Japon</a></li>
-              <li><a href="/voyager" className="text-gray-300 hover:text-white transition-colors">Voyager au Japon</a></li>
-              <li><a href="/se-preparer" className="text-gray-300 hover:text-white transition-colors">Se préparer</a></li>
+              <li><a href="/etudier" className="text-gray-300 hover:text-white transition-colors hover-lift">Étudier au Japon</a></li>
+              <li><a href="/travailler" className="text-gray-300 hover:text-white transition-colors hover-lift">Travailler au Japon</a></li>
+              <li><a href="/voyager" className="text-gray-300 hover:text-white transition-colors hover-lift">Voyager au Japon</a></li>
+              <li><a href="/se-preparer" className="text-gray-300 hover:text-white transition-colors hover-lift">Se préparer</a></li>
             </ul>
           </div>
 
