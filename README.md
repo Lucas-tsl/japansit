@@ -10,13 +10,6 @@ Un blog complet et moderne sur le Japon construit avec Next.js et Tailwind CSS.
 
 Un blog complet et moderne sur le Japon construit avec Next.js et Tailwind CSS.
 
-## � Site en Ligne
-
-**[🚀 Voir le site JapanSit →](https://japansit-1z20iwwx1-lucas-tsls-projects.vercel.app)**
-
-## �🌸 Aperçu
-
-JapanSit est une plateforme complète dédiée à la culture japonaise, offrant des ressources pour étudier, travailler, voyager au Japon et découvrir sa riche culture.
 
 ### ✨ Fonctionnalités
 
