@@ -7,10 +7,10 @@ export const metadata: Metadata = {
 
 export default function AnimesPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-blue/20 via-white to-sakura-pink/20">
-      <div className="container mx-auto px-4 py-16">
-        {/* Header */}
-        <div className="text-center mb-16">
+    <div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-indigo-blue/10 via-sakura-pink/5 to-temple-gold/10 py-20">
+        <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold text-japan-red mb-6 font-japanese">
             Animés & Manga
           </h1>
@@ -18,6 +18,9 @@ export default function AnimesPage() {
             Explorez l&apos;univers fascinant de l&apos;animation et de la bande dessinée japonaise
           </p>
         </div>
+      </section>
+
+      <div className="container mx-auto px-4 py-16">
 
         {/* Famous Studios */}
         <section className="mb-20">

@@ -7,10 +7,10 @@ export const metadata: Metadata = {
 
 export default function TraditionsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-temple-gold/20 via-white to-japan-red/20">
-      <div className="container mx-auto px-4 py-16">
-        {/* Header */}
-        <div className="text-center mb-16">
+    <div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-temple-gold/10 via-japan-red/5 to-sakura-pink/10 py-20">
+        <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold text-japan-red mb-6 font-japanese">
             Traditions Japonaises
           </h1>
@@ -18,6 +18,9 @@ export default function TraditionsPage() {
             Plongez dans l&apos;héritage culturel millénaire du Japon et ses traditions vivantes
           </p>
         </div>
+      </section>
+
+      <div className="container mx-auto px-4 py-16">
 
         {/* Tea Ceremony */}
         <section className="mb-20">

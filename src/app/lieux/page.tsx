@@ -7,10 +7,10 @@ export const metadata: Metadata = {
 
 export default function LieuxPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-sakura-pink/20 via-white to-cherry-blossom/20">
-      <div className="container mx-auto px-4 py-16">
-        {/* Header */}
-        <div className="text-center mb-16">
+    <div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-sakura-pink/10 via-cherry-blossom/5 to-bamboo-green/10 py-20">
+        <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold text-japan-red mb-6 font-japanese">
             Lieux Incontournables
           </h1>
@@ -18,6 +18,9 @@ export default function LieuxPage() {
             Explorez les destinations les plus emblématiques du Japon, des temples anciens aux gratte-ciels modernes
           </p>
         </div>
+      </section>
+
+      <div className="container mx-auto px-4 py-16">
 
         {/* Major Cities */}
         <section className="mb-20">

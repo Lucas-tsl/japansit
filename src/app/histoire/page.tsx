@@ -7,10 +7,10 @@ export const metadata: Metadata = {
 
 export default function HistoirePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-japan-red/20 via-white to-temple-gold/20">
-      <div className="container mx-auto px-4 py-16">
-        {/* Header */}
-        <div className="text-center mb-16">
+    <div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-japan-red/10 via-temple-gold/5 to-cherry-blossom/10 py-20">
+        <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold text-japan-red mb-6 font-japanese">
             Histoire du Japon
           </h1>
@@ -18,6 +18,9 @@ export default function HistoirePage() {
             Découvrez l&apos;histoire fascinante du Japon, des origines aux temps modernes
           </p>
         </div>
+      </section>
+
+      <div className="container mx-auto px-4 py-16">
 
         {/* Timeline */}
         <section className="mb-20">
